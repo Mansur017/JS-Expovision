@@ -81,52 +81,103 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function evenOrOdd(chifre) {
-  if (chifre % 2 === 0) {
-    console.log(`even`);
-  } else {
-    console.log(`odd`);
+// function evenOrOdd(chifre) {
+//   if (chifre % 2 === 0) {
+//     console.log(`even`);
+//   } else {
+//     console.log(`odd`);
+//   }
+// }
+// evenOrOdd(123);
+// evenOrOdd(57);
+// evenOrOdd(98);
+
+// function isMajor(number) {
+//   if (number > 18) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(isMajor(28));
+
+// function isLowerThanTen(number) {
+//   if (number < 10) {
+//     console.log("константа меньше 10");
+//   } else {
+//     console.log("константа не меньше 10");
+//   }
+// }
+// isLowerThanTen(50);
+
+// function showAlert() {
+//   alert("Привет, Мир");
+// }
+// showAlert();
+
+// function showconsole() {
+//   console.log("Javascript");
+// }
+// showconsole();
+
+// let text = "freedom";
+// function showText(text) {
+//   if (text === "lorem") {
+//     console.log("У вас ошибка в тексте");
+//   } else {
+//     console.log(`Содержимое переменной: ${text}`);
+//   }
+// }
+// showText(text);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+for( let x = 1; x <= 100; x++ ){
+  if( x % 2 === 0){
+    console.log(`${x} is even `);
+
+  }
+  else {
+    console.log(`${x} is odd `);
   }
 }
-evenOrOdd(123);
-evenOrOdd(57);
-evenOrOdd(98);
 
-function isMajor(number) {
-  if (number > 18) {
-    return true;
-  } else {
-    return false;
-  }
+const man = {
+  name: "Ali",
+  surname: "Aliev",
+  age: "23",
+  height: "185",
+  login: 1234,
+  password: "ABCD",
+  cash: "100$",
+  address: {
+    city: "Boston",
+    street: "Timesquare",
+    number: 34,
+  },
+};
+
+let password = prompt("Password?");
+
+if (man.password === password) {
+  console.log(
+    `Добро пожаловать, ${man.name} ${man.surname}.  Ваш логин ${man.login}`
+  );
+} else {
+  console.log(`Указанный пароль ${password} не верен. Попробуйте еще раз`);
 }
 
-console.log(isMajor(28));
-
-function isLowerThanTen(number) {
-  if (number < 10) {
-    console.log("константа меньше 10");
-  } else {
-    console.log("константа не меньше 10");
-  }
+for (let num = 1; num < 3; num++) {
+  console.log(`4ucno: ${num}`);
 }
-isLowerThanTen(50);
 
-function showAlert() {
-  alert("Привет, Мир");
+num = 1;
+while (num < 3) {
+  console.log(`4ucno: ${num}`);
+  num++;
 }
-showAlert();
 
-function showconsole() {
-  console.log("Javascript");
+for (let x = 0; x < 11; x++) {
+  console.log(x);
 }
-showconsole();
-
-let text = "freedom";
-function showText(text) {
-  if (text === "lorem") {
-    console.log("У вас ошибка в тексте");
-  } else {
-    console.log(`Содержимое переменной: ${text}`);
-  }
-}
-showText(text);
