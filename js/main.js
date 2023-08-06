@@ -133,51 +133,107 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-for( let x = 1; x <= 100; x++ ){
-  if( x % 2 === 0){
-    console.log(`${x} is even `);
+// const man = {
+//   name: "Ali",
+//   surname: "Aliev",
+//   age: "23",
+//   height: "185",
+//   login: 1234,
+//   password: "ABCD",
+//   cash: "100$",
+//   address: {
+//     city: "Boston",
+//     street: "Timesquare",
+//     number: 34,
+//   },
+// };
 
-  }
-  else {
-    console.log(`${x} is odd `);
-  }
-}
+// let password = prompt("Password?");
 
-const man = {
-  name: "Ali",
-  surname: "Aliev",
-  age: "23",
-  height: "185",
-  login: 1234,
-  password: "ABCD",
-  cash: "100$",
-  address: {
-    city: "Boston",
-    street: "Timesquare",
-    number: 34,
-  },
-};
+// if (man.password === password) {
+//   console.log(
+//     `Добро пожаловать, ${man.name} ${man.surname}.  Ваш логин ${man.login}`
+//   );
+// } else {
+//   console.log(`Указанный пароль ${password} не верен. Попробуйте еще раз`);
+// }
 
-let password = prompt("Password?");
+// for (let num = 1; num < 3; num++) {
+//   console.log(`4ucno: ${num}`);
+// }
 
-if (man.password === password) {
-  console.log(
-    `Добро пожаловать, ${man.name} ${man.surname}.  Ваш логин ${man.login}`
-  );
+// num = 1;
+// while (num < 3) {
+//   console.log(`4ucno: ${num}`);
+//   num++;
+// }
+
+// for (let x = 0; x < 11; x++) {
+//   console.log(x);
+// }
+
+// for (let x = 1; x <= 10; x++) {
+//   if (x % 2 === 0) {
+//     console.log(`${x} is even `);
+//   } else {
+//     console.log(`${x} is odd `);
+//   }
+// }
+
+let name = "Mansur"; // string;
+const age = 23; // number;
+if (age < 15) {
+  console.log("Доступ запрещен!");
 } else {
-  console.log(`Указанный пароль ${password} не верен. Попробуйте еще раз`);
+  console.log(`Привет ${name}!`);
 }
 
-for (let num = 1; num < 3; num++) {
-  console.log(`4ucno: ${num}`);
+function viewMoney() {
+  console.log("Вот вам 10$");
+}
+viewMoney();
+
+function getMoney() {
+  return "Вот вам 10$";
 }
 
-num = 1;
-while (num < 3) {
-  console.log(`4ucno: ${num}`);
-  num++;
+let cash;
+function getMoney(cash) {
+  return `Вот вам ${cash}$`;
+}
+console.log(getMoney(1000));
+
+Math.pow(3, 5);
+console.log(Math.pow(3, 4));
+
+function squared(x) {
+  return x * x;
+}
+squared(10);
+
+Math.max(10, 20, 50);
+console.log(Math.max(10, 20, 50));
+
+function showMaxNumber(a, b, c) {
+  console.log(Math.max(a, b, c));
+}
+showMaxNumber(10, 20, 50);
+
+function evenOdd(x, y) {
+  if (x % 2 === 0 && y % 2 === 0) {
+    return x * y;
+  } else if (x % 2 !== 0 && y % 2 !== 0) {
+    return x + y;
+  } else if (x % 2 === 0) {
+    return y;
+  } else {
+    return x;
+  }
 }
 
-for (let x = 0; x < 11; x++) {
-  console.log(x);
+console.log(evenOdd(11, 10));
+
+function discriminant(a, b, c) {
+  return b ** 2 - 4 * a * c;
 }
+console.log(`Дискриминант: ${discriminant(1, 2, 3)}`);
