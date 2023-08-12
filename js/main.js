@@ -180,60 +180,91 @@
 //   }
 // }
 
-let name = "Mansur"; // string;
-const age = 23; // number;
-if (age < 15) {
-  console.log("Доступ запрещен!");
-} else {
-  console.log(`Привет ${name}!`);
-}
+// let name = "Mansur"; // string;
+// const age = 23; // number;
+// if (age < 15) {
+//   console.log("Доступ запрещен!");
+// } else {
+//   console.log(`Привет ${name}!`);
+// }
 
-function viewMoney() {
-  console.log("Вот вам 10$");
-}
-viewMoney();
+// function viewMoney() {
+//   console.log("Вот вам 10$");
+// }
+// viewMoney();
 
-function getMoney() {
-  return "Вот вам 10$";
-}
+// function getMoney() {
+//   return "Вот вам 10$";
+// }
 
-let cash;
-function getMoney(cash) {
-  return `Вот вам ${cash}$`;
-}
-console.log(getMoney(1000));
+// let cash;
+// function getMoney(cash) {
+//   return `Вот вам ${cash}$`;
+// }
+// console.log(getMoney(1000));
 
-Math.pow(3, 5);
-console.log(Math.pow(3, 4));
+// Math.pow(3, 5);
+// console.log(Math.pow(3, 4));
 
-function squared(x) {
-  return x * x;
-}
-squared(10);
+// function squared(x) {
+//   return x * x;
+// }
+// squared(10);
 
-Math.max(10, 20, 50);
-console.log(Math.max(10, 20, 50));
+// Math.max(10, 20, 50);
+// console.log(Math.max(10, 20, 50));
 
-function showMaxNumber(a, b, c) {
-  console.log(Math.max(a, b, c));
-}
-showMaxNumber(10, 20, 50);
+// function showMaxNumber(a, b, c) {
+//   console.log(Math.max(a, b, c));
+// }
+// showMaxNumber(10, 20, 50);
 
-function evenOdd(x, y) {
-  if (x % 2 === 0 && y % 2 === 0) {
-    return x * y;
-  } else if (x % 2 !== 0 && y % 2 !== 0) {
-    return x + y;
-  } else if (x % 2 === 0) {
-    return y;
-  } else {
-    return x;
-  }
-}
+// function evenOdd(x, y) {
+//   if (x % 2 === 0 && y % 2 === 0) {
+//     return x * y;
+//   } else if (x % 2 !== 0 && y % 2 !== 0) {
+//     return x + y;
+//   } else if (x % 2 === 0) {
+//     return y;
+//   } else {
+//     return x;
+//   }
+// }
 
-console.log(evenOdd(11, 10));
+// console.log(evenOdd(11, 10));
 
-function discriminant(a, b, c) {
-  return b ** 2 - 4 * a * c;
-}
-console.log(`Дискриминант: ${discriminant(1, 2, 3)}`);
+// function discriminant(a, b, c) {
+//   return b ** 2 - 4 * a * c;
+// }
+// console.log(`Дискриминант: ${discriminant(1, 2, 3)}`);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let a = ["lorem", 123, true, "ipsum"];
+// console.log(a);
+// console.log(a.length);
+// console.log(a.shift());
+// console.log(a.pop());
+
+// let em = [];
+// em = ["A", "B", "C", true, 5];
+// em.push("name");
+// em.push("age");
+// em.push("size");
+// em.shift();
+// em.splice(em.length - 2);
+// console.log(em);
+
+// let number = [1, 3, 5, 7, 9];
+// console.log(number);
+
+// for (let index = 0; index < number.length; index++) {
+//   number[index]++;
+// }
+// console.log(number);
+
+// let number2 = [];
+// for (let index = 0; index < 11; index++) {
+//   number2.push(index);
+// }
+// console.log(number2);
