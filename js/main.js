@@ -22,13 +22,13 @@
 // const c = 10;
 // // c = 20; //  ошибка, const не меняется
 
-// // let name = prompt("Твое имя?");
-// // let address = prompt("Твой адрес?");
-// // let phone = prompt("Твой номер?");
+// let name = prompt("Твое имя?");
+// let address = prompt("Твой адрес?");
+// let phone = prompt("Твой номер?");
 
-// // console.log(
-// //   `Cтудент ${name}, Адрес проживания: ${address}, Номер телефона: ${phone}.`
-// // );
+// console.log(
+//   `Cтудент ${name}, Адрес проживания: ${address}, Номер телефона: ${phone}.`
+// );
 
 // // let rubleToDollar = 0.011;
 // // let moneyRuble = 10500;
@@ -203,13 +203,12 @@
 // }
 // console.log(getMoney(1000));
 
-// Math.pow(3, 5);
 // console.log(Math.pow(3, 4));
 
 // function squared(x) {
 //   return x * x;
 // }
-// squared(10);
+// console.log(squared(3));
 
 // Math.max(10, 20, 50);
 // console.log(Math.max(10, 20, 50));
@@ -240,31 +239,35 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// let a = ["lorem", 123, true, "ipsum"];
-// console.log(a);
-// console.log(a.length);
-// console.log(a.shift());
-// console.log(a.pop());
+let a = ["lorem", 123, true, "ipsum"];
+console.log(a);
+console.log(a.length);
+console.log(a.shift());
+console.log(a.pop());
 
-// let em = [];
-// em = ["A", "B", "C", true, 5];
-// em.push("name");
-// em.push("age");
-// em.push("size");
-// em.shift();
-// em.splice(em.length - 2);
-// console.log(em);
+let em = [];
+em = ["A", "B", "C", true, 5];
+em.push("name");
+em.push("age");
+em.push("size");
+em.shift();
+em.splice(em.length - 2);
+console.log(em);
 
-// let number = [1, 3, 5, 7, 9];
-// console.log(number);
+let number = [1, 3, 5, 7, 9];
+console.log(number);
 
-// for (let index = 0; index < number.length; index++) {
-//   number[index]++;
-// }
-// console.log(number);
+for (let index = 0; index < number.length; index++) {
+  number[index]++;
+}
+console.log(number);
 
-// let number2 = [];
-// for (let index = 0; index < 11; index++) {
-//   number2.push(index);
-// }
-// console.log(number2);
+number[2] = "A";
+console.log(number);
+
+
+let number2 = [];
+for (let x = 0; x < 11; x++) {
+  number2.push(x);
+}
+console.log(number2);
