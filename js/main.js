@@ -239,35 +239,175 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let a = ["lorem", 123, true, "ipsum"];
-console.log(a);
-console.log(a.length);
-console.log(a.shift());
-console.log(a.pop());
+// let a = ["lorem", 123, true, "ipsum"];
+// console.log(a);
+// console.log(a.length);
+// console.log(a.shift());
+// console.log(a.pop());
 
-let em = [];
-em = ["A", "B", "C", true, 5];
-em.push("name");
-em.push("age");
-em.push("size");
-em.shift();
-em.splice(em.length - 2);
-console.log(em);
+// let em = [];
+// em = ["A", "B", "C", true, 5];
+// em.push("name");
+// em.push("age");
+// em.push("size");
+// em.shift();
+// em.splice(em.length - 2);
+// console.log(em);
 
-let number = [1, 3, 5, 7, 9];
-console.log(number);
+// let number = [1, 3, 5, 7, 9];
+// console.log(number);
 
-for (let index = 0; index < number.length; index++) {
-  number[index]++;
-}
-console.log(number);
+// for (let index = 0; index < number.length; index++) {
+//   number[index]++;
+// }
+// console.log(number);
 
-number[2] = "A";
-console.log(number);
+// number[2] = "A";
+// console.log(number);
 
+// let number2 = [];
+// for (let x = 0; x < 11; x++) {
+//   number2.push(x);
+// }
+// console.log(number2);
 
-let number2 = [];
-for (let x = 0; x < 11; x++) {
-  number2.push(x);
-}
-console.log(number2);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(array);
+// array.forEach(function (item, index, array) {
+//   console.log("item - " + item, "ind:" + index, array);
+// });
+
+// let cars = ["bmw", "mers", "toyota"];
+// cars.forEach(function (car, index) {
+//   console.log(car, index);
+// });
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let arr2 = arr.filter(function (item) {
+//   if (item > 4) {
+//     return true;
+//   }
+// });
+// console.log(arr2);
+
+// let array = [1, 2, 3, 4, 5, 6, 7];
+
+// let array2 = array.filter(function (item) {
+//   if (item > 3) {
+//     return true;
+//   }
+// });
+// let array3 = array2.map(function (item) {
+//   return item + " + expo";
+// });
+
+// let array4 = array2.reduce(function (sum, item) {
+//   return item + sum;
+// }, 5);
+
+// console.log(array);
+// console.log(array2);
+// console.log(array3);
+// console.log(array4);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let array = [10, 2762, 0.42, 192, 3, 28, 1125, 2018, 34, 66, 100];
+array = array.filter(function (item) {
+  if (item % 2 !== 0) {
+    return true;
+  }
+});
+console.log(array);
+
+let array2 = [
+  "lorem ipsum",
+  "javascript",
+  "php2",
+  "css",
+  "react",
+  "git",
+  "html",
+  "mysql",
+];
+array2 = array2.filter(function (item) {
+  if (item.length <= 4) {
+    return true;
+  }
+});
+console.log(array2);
+
+let array3 = [1, -3, 5, 6, -7, 8, 9, -11];
+array3 = array3.filter(function (item) {
+  if (item < 0) {
+    return true;
+  }
+});
+console.log(array3);
+
+let array4 = [10, 2762, 0.42, 192, 3, 28, 1125, 2018, 34, 66, 100];
+array4 = array4.filter(function (item) {
+  if (item % 2 == 0) {
+    return true;
+  }
+});
+console.log(array4);
+
+let array5 = [
+  "lorem ipsum",
+  "javascript",
+  "php2",
+  "css",
+  "react",
+  "git",
+  "html",
+  "mysql",
+];
+
+array5 = array5.filter(function (item) {
+  if (item.length !== 3) {
+    return true;
+  }
+});
+console.log(array5);
+
+let array6 = [5, 6, 7, 8, 9];
+array6 = array6.map(function (item) {
+  return item * item;
+});
+console.log(array6);
+
+let array7 = [
+  { a: 10, b: 5 },
+  { a: 20, b: 22 },
+  { a: 131, b: 55 },
+];
+array7 = array7.map(function (item) {
+  return item.a + item.b;
+});
+console.log(array7);
+
+let array8 = [-13, 0, 12, 1662, -0.32, -102, -2];
+console.log(array8);
+array8 = array8.filter(function (item) {
+  return item < 0;
+});
+console.log(array8);
+array8 = array8.reduce(function (sum, item) {
+  return item + sum;
+}, 0);
+console.log(array8);
+
+let array9 = [
+  { x: 10, y: "lorem" },
+  { x: 21, y: "lorem" },
+  { x: -17, y: "lorem" },
+  { x: 156, y: "lorem" },
+];
+array9 = array9.reduce(function (sum, item) {
+  return sum + item.x;
+}, 0);
+console.log(array9);
+
