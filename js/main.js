@@ -531,30 +531,32 @@
 // });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let arr1 = [101, 202, 303, 404, 505];
-let arr2 = [606, 707, 808, 909];
-let superArr = [...arr1, ...arr2];
-console.log(superArr);
+// let arr1 = [101, 202, 303, 404, 505];
+// let arr2 = [606, 707, 808, 909];
+// let superArr = [...arr1, ...arr2];
+// console.log(superArr);
 
-console.log(Math.min(...superArr));
+// console.log(Math.min(...superArr));
 
-let obj = {
-  width: 300,
-  height: 550,
-};
+// let obj = {
+//   width: 300,
+//   height: 550,
+// };
 
-let obj2 = {
-  ...obj,
-  area: function () {
-    return this.width + this.height;
-  },
-};
+// let obj2 = {
+//   ...obj,
+//   area: function () {
+//     return this.width + this.height;
+//   },
+// };
 
-console.log(obj);
-console.log(obj2);
-console.log(obj2.area());
+// console.log(obj);
+// console.log(obj2);
+// console.log(obj2.area());
 
-function sum(...total) {
-  return total.reduce((sum, item) => sum + item, 0);
-}
-console.log(sum(10, 20, 30, 40, 50));
+// function sum(...total) {
+//   return total.reduce((sum, item) => sum + item, 0);
+// }
+// console.log(sum(10, 20, 30, 40, 50));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

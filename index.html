@@ -5,7 +5,74 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <style>
+    .style {
+      color: green;
+    }
+    .blocks {
+      width: 300px;
+      height: 300px;
+    }
+    .block1 {
+      background-color: red;
+      margin-bottom: 20px;
+    }
+    .block2 {
+      background-color: blue;
+    }
+    .active {
+      background-color: aqua;
+    }
+    .border {
+    }
+  </style>
   <body>
+    <!-- <ul id="1">
+      <li class="a">Lorem1</li>
+      <li class="b">Lorem2</li>
+      <li class="c">Lorem3</li>
+    </ul> -->
+
+    <div class="blocks block1" id="block1"></div>
+    <div class="blocks block2" id="block2"></div>
+
+    <script>
+      // let ul = document.getElementById(1);
+
+      // let li1 = document.querySelector(".b");
+
+      // let li = document.createElement("li");
+
+      // li.innerText = "Expo";
+
+      // ul.append(li);
+      // ul.before("Lorem");
+      // ul.prepend("Lorem");
+      // ul.append("Lorem");
+      // ul.after("Lorem");
+
+      // ul.classList.add("style");
+      // ul.classList.remove("style");
+      // ul.classList.contains("style");
+      // ul.classList.toggle("style");
+
+      let block1 = document.getElementById("block1");
+      let block2 = document.getElementById("block2");
+
+      block1.onclick = color;
+      block2.onclick = color;
+
+      block1.addEventListener("click", border);
+      block2.addEventListener("click", border);
+
+      function color() {
+        this.classList.toggle("active");
+      }
+      function border() {
+        this.style.borderRadius = "100px";
+      }
+    </script>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
